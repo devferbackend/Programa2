@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>ROCK PAPER SCISSORS</h1>
+        <p class="subtitle">First to 5 wins!</p>
+    
+    <!-- Scoreboard-->
+        <div class="scoreboard">
+             <div class="score-card human">
+                <div class="score-label">You</div>
+                <div class="score-value" id="human-score">0</div>
+             </div>
+             <div class="score-card computer">
+                <div class="score-label">Computer</div>
+                <div class="score-value" id="computer-score">0</div>
+            </div>
+        </div>    
+        <!-- Choice buttons-->
+             <div class="choices">
+                <button class="choice-btn" data-choice="rock">
+                    <span class="emoji">🪨</span>
+                    <span class="label">Rock</span></button>
+                <button class="choice-btn" data-choice="paper">
+                    <span class="emoji">📄</span>
+                    <span class="label">Paper</span></button>
+                <button class="choice-btn" data-choice="scissors">
+                    <span class="emoji">✂️</span>
+                    <span class="label">Scissors</span></button>
+             </div>
+         <!-- Round result-->
+            <div class="results">
+                <div class="round-result" id="round-result">Choose your weapon!</div>
+                <div class="round-detail" id="round-detail"></div>
+          </div>
+          <!-- GAme Over-->
+           <div class="game-over" id="game-over">
+                 <div id="game-over-text"></div>
+                 <button class="play-again" id="play-again">Play Again</button>
+           </div>
+     </div>
+<script src="script.js"></script>
+</body>
+</html>
